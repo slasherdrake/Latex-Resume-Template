@@ -1,0 +1,136 @@
+%-------------------------
+% Resume in Latex
+% Author : Drake Kendall
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small #2} \\
+      {\small #3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Drake Kendall} \\ \vspace{1pt}
+    \href{mailto:dkdrakekendall@gmail.com}{dkdrakekendall@gmail.com} $|$
+    (720) 472-1229 $|$
+    \href{https://www.linkedin.com/in/drake-kendall}{linkedin.com/in/drake-kendall}
+\end{center}
+
+\section{Skills \\ \normalfont\normalsize Certifications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \textbf{Languages}{: C++, JavaScript/TypeScript, HTML, CSS, Python, Scheme, Prolog}
+    \item \textbf{CS Topics}{: Data Structures, Algorithms, Web Development, Computer Networks, React, Node, AWS Amplify, AWS Lambda, DynamoDB, Raspberry Pi, 3D Printing, Big O Notation}
+    \item \textbf{Certifications}{: AWS Certified Developer - Associate, AWS Certified Cloud Practitioner}
+    \item \textbf{Other}{: Teamwork, Communication, Leadership, Organization, Problem Solving, Creative Thinking, Analytical Skills, Time Management, Desire to Learn}
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {SongOtter}{Aug 2024 -- Present}
+    {Tucson, AZ}{songotter.com}
+    \resumeItemListStart
+      \resumeItem{Created a social media platform that allows users to rate and review music, fostering community engagement.}
+      \resumeItem{Designed and implemented a fully responsive frontend using React for smooth cross-device UX.}
+      \resumeItem{Built serverless backend with AWS Lambda and DynamoDB for scalability and performance.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Student Assistant, Genesis Lab}{Aug 2021 -- May 2024}
+    {Pepperdine University, Malibu, CA}{}
+    \resumeItemListStart
+      \resumeItem{Assisted students with 3D printing for research and academic purposes.}
+      \resumeItem{Managed printer queue and met project timelines.}
+      \resumeItem{Organized and led 5 educational events on 3D printing and VR.}
+      \resumeItem{Troubleshot technical issues with 3D printers and lab computers.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading{\textbf{ChatGPT Wearable} $|$ {Raspberry Pi, Python, Google TTS API}}{}
+    \resumeItemListStart
+      \resumeItem{Built a voice-activated AI assistant using ChatGPT function calls.}
+      \resumeItem{Implemented Google’s Text-to-Speech API for real-time responses.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading{\textbf{Sorting Algorithms Analysis} $|$ {C++}}{}
+    \resumeItemListStart
+      \resumeItem{Tested 5 different sorting algorithms and analyzed compile times.}
+      \resumeItem{Used Big O Notation to predict and verify efficiency of each algorithm.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Bachelor of Science in Computer Science/Mathematics}{Aug 2020 -- Apr 2024}
+    {Pepperdine University}{Malibu, CA}
+    \resumeItemListStart
+      \resumeItem{Relevant Coursework: Data Structures, Programming Paradigms, Programming Principles with JavaScript}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
